@@ -1,0 +1,21 @@
+
+* Quick Start 
+Run the following from power-shell. [[https://github.com/nix-community/NixOS-WSL.git][nixos-wsl]] git-hub
+- Enable WSL if you haven't done already:
+#+begin_src 
+wsl --install --no-distribution
+#+end_src
+
+Download *nixos.wsl from [[https://github.com/nix-community/NixOS-WSL/releases/latest][the latest release.]]
+
+* Install NixOS-WSL
+#+begin_src 
+wsl --install --from-file nixos.wsl
+#+end_src
+
+for more detail [[https://nix-community.github.io/NixOS-WSL/install.html#install-nixos-wsl][check]]
+
+* install on windows (Only for My Emacs Piper TTS)
+#+begin_src 
+winget.exe install mpv
+#+end_src

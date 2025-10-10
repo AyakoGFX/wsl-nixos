@@ -12,13 +12,40 @@
     # include NixOS-WSL modules
     <nixos-wsl/modules>
     ./modules/emacs.nix
-     ./modules/font.nix
+    ./modules/font.nix
+    ./modules/sound.nix
   ];
 
 environment.systemPackages = with pkgs; [
-  github-desktop
+  # github-desktop
 ];
 
+environment.variables.PATH = [
+  "/mnt/c/Windows/System32"
+  "/mnt/c/Windows/"
+];
+
+  # environment.variables.PATH = [
+    # --- essential system paths ---
+    # "/run/wrappers/bin"
+    # "/usr/local/sbin"
+    # "/usr/local/bin"
+  # "/usr/sbin"
+    # "/usr/bin"
+    # "/sbin"
+    # "/bin"
+    # "/usr/lib/wsl/lib"
+    # "/run/current-system/sw/bin"
+
+    # --- recommended Windows paths ---
+    # "/mnt/c/Windows/System32"
+    # "/mnt/c/Windows"
+    # "/mnt/c/Program Files"
+    # "/mnt/c/Program Files (x86)"
+    # "/mnt/c/Users/ayako/AppData/Local/Microsoft/WindowsApps"
+    # "/mnt/c/Users/ayako/AppData/Local/Programs"
+  # ];
+  
 
   wsl.enable = true;
   wsl.defaultUser = "nixos";

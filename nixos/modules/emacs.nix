@@ -17,6 +17,9 @@ in {
     ledger
     typst
     tinymist
+    ffmpeg
+    mpv
+
     # delta #Syntax-highlighting diff files git
     # emacs-lsp-booster
     # ghostscript # doc view mode Emacs
