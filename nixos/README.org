@@ -6,7 +6,7 @@ Run the following from power-shell. [[https://github.com/nix-community/NixOS-WSL
 wsl --install --no-distribution
 #+end_src
 
-Download *nixos.wsl from [[https://github.com/nix-community/NixOS-WSL/releases/latest][the latest release.]]
+Download *nixos.wsl* from [[https://github.com/nix-community/NixOS-WSL/releases/latest][the latest release.]]
 
 * Install NixOS-WSL
 #+begin_src 
